@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    
+<addon id="repository.tvone" name="[COLOR khaki]tvOne Repository[/COLOR]" version="1.0" provider-name="Jax">
+<extension point="xbmc.addon.repository" name="tvOne Repository">
+        <dir minversion="19.0">
+            <info compressed="false">https://github.com/OldManJax/repository.tvone/raw/master/addons.xml</info>
+            <checksum>https://github.com/OldManJax/repository.tvone/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/OldManJax/repository.tvone/raw/master/</datadir>
+        </dir>   
+</extension>
+<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>All the working tvOne add-ons</summary>
+    <description>This is a simple repo for all of RACC's tvOne IPTV add-ons (Kodi 19 and up)[CR]After seeing so many versions and forks out there I wanted to provide a location for the original latest updated versions. These are taken directly from RACC's Japanese Repository and slightly modified with an icon, fanart and a date updated tag in the description. Developers are welcome to import this into their own repos.
+    - tvOne pulls from TV-Tap and was updated Oct 2024
+    - tvOne-111 pulls from Redbox and was updated Oct 2024
+    - tvOne-1112 pulls from LiveNet and was updated Oct 2024
+    - tvOne-112 pulls from RStv and was updated July 2023
+    - tvOne-11 pulled from SwiftStreams but is dead so it's not included here</description>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>
+
+<addon id="plugin.video.tvone" name="tvOne" version="27.1" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pycryptodome"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.future"/>
+    <import addon="script.module.routing"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">TvTap</summary>
+    <description lang="en_gb">tvOne aka TvTap[CR]Updated Oct 2024</description>
+    <license>GPL-3.0</license>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>  
+  </extension>
+</addon>
+<!-- tvone 111 -->
+<addon id="plugin.video.tvone111" name="tvOne111" version="26.1" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pycryptodome"/>
+    <import addon="script.module.pyamf"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.future"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">RedBox TV</summary>
+    <description lang="en_gb">tvOne111 aka RedBox TV Live[CR]Updated October 2024</description>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+<!-- tvone 112 -->
+<addon id="plugin.video.tvone112" name="tvOne112" version="3.0.1" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pycryptodome"/>
+    <import addon="script.module.pyamf"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.future"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">RStv</summary>
+    <description lang="en_gb">tvOne112 aka RStv[CR]Updated July 2023</description>
+    <disclaimer lang="en_gb"/>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>  
+    </assets>
+  </extension>
+</addon>
+<!-- tvone 1112 -->
+<addon id="plugin.video.tvone1112" name="tvOne1112" version="112.1" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.pycryptodome"/>
+    <import addon="script.module.dateutil"/>
+    <import addon="script.module.pyamf"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.future"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.routing"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">LiveNet TV</summary>
+    <description lang="en_gb">tvOne1112 aka LiveNet TV[CR]Updated October 2024</description>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+</addons>
